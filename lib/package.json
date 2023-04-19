@@ -1,0 +1,16 @@
+{
+  "name": "@org/libname",
+  "version": "1.0.0",
+  "main": "dist/org-libname.cjs.js",
+  "module": "dist/org-libname.esm.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.21.4",
+    "@preconstruct/cli": "^2.3.0",
+    "typescript": "^5.0.2"
+  },
+  "scripts": {
+    "watch": "preconstruct watch",
+    "release": "preconstruct build && yarn publish --access public"
+  }
+}
